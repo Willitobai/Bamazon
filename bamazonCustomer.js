@@ -13,8 +13,8 @@ var connection = mysql.createConnection({
 	user: 'root',
 
 	// Your password
-	password: '12345',
-	database: 'bamazon'
+	password: 'C@becita21',
+	database: 'Bamazon'
 });
 
 // validateInput makes sure that the user is supplying only positive integers for their inputs
