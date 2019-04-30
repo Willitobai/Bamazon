@@ -1,6 +1,7 @@
+DROP DATABASE IF EXIST Bamazon;
 -- Create a database called 'Bamazon' and switch into it for this activity --
-CREATE DATABASE bamazon;
-USE bamazon;
+CREATE DATABASE Bamazon;
+USE Bamazon;
 
 -- Create a table called 'products' which will contain the store inventory --
 CREATE TABLE products (
@@ -12,25 +13,27 @@ CREATE TABLE products (
 	PRIMARY KEY (item_id)
 );
 
+SELECT * FROM products;
+
 -- Insert data into the 'products' table --
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES  ('Pantene Shampoo', 'Cosmetics', 5.75, 500),
-		('Pantene Conditioner', 'Cosmetics', 6.25, 627),
-		('Carrots', 'Grocery', 5.99, 300),
-		('Two ply napkin', 'Grocery', 4.25, 400),
-		('Bosc Pear', 'Produce', 0.35, 800),
-		('Simple Mills Crackers', 'Produce', 0.20, 100),
-		('Frozen Pizza', 'Grocery', 4.45, 267),
-		('Almond Milk', 'Grocery', 4.50, 200),
-		('Huggies Diapers', 'Children', 2.75, 476),
-		('I-pad', 'Electronics', 12.99, 200),
-		('Pampers Baby Wipes', 'Children', 1.50, 423),
-		('T-shirts', 'Sports', 12.75, 150),
-		('Soccer Ball', 'Sports', 7.99, 89),
-		('Hanes Underwear', 'Clothing', 5.55, 120),
-		('Nike Shoes', 'Clothing', 17.88, 250),
-		('Purina Cat Chow', 'Pet', 7.25, 157),
-		('Fancy Feast Wet Cat Food', 'Pet', 12.50, 163),
-		('Aspirin', 'Pharmacy', 4.95, 389),
-		('Rubbing Alcohol', 'Pharmacy', 3.25, 550),
-		('Nintendo', 'Electronics', 3.25, 432);
+VALUES  ('Bose earphones', 'Electronics', 199.99, 500),
+		('Shoes', 'Nike', 59.99, 627),
+		('Glad 12 Gal Trash Bags', 'Grocery', 5.99, 300),
+		('Sony Playstation', 'Electronics', 299.99, 400),
+		('Oranges', 'Produce', 0.35, 800),
+		('Vodka', 'Liquor', 8.99, 10000),
+		('Whiskey', 'Liquor', 9.99, 267),
+		('Weed', 'Adult', 50.00, 476),
+		('Laptop Mac', 'Apple Store', 1599.99, 75),
+		('Ipad', 'Apple Store', 499.99, 423),
+		('Iphone', 'Apple Store', 899.99, 150);
+		-- ('Socks', 'Sporting Goods', 7.99, 89),
+		-- ('Fitbit', 'Amason', 150.00, 120),
+		-- ('Nike Shorts', 'Clothing', 17.88, 50),
+		-- ('Fancy Feast Wet Cat Food', 'Pet', 12.50, 63),
+		-- ('He-man', 'Toy', 3.25, 50),
+		-- ('Ben & Jerry Ice Cream', 'Grocery', 3.25, 32),
+		-- ('Beans', 'Grocery', 2.25, 12),
+		-- ('Coffe Beans', 'Peets', 7.25, 2),
+		-- ('Ben & Jerry Ice Cream', 'Grocery', 3.25, 32);
